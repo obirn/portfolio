@@ -4,30 +4,47 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='navbar'>
+        <p className='navbar-item'>Home</p>
+        <p className='navbar-item'>About</p>
+        <p className='navbar-item'>Hobbies</p>
+        <p className='navbar-item'>Resume</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+
+      <div className='greeting-container'>
+      <span className='greeting-name'>Hi, I'm Robin.</span>
+      <span className='greeting-job'>A Developper.</span>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div style={{ margin: "20px"}}>      <div > I'm passionate about <b>algorithms</b>, <b>problems solving</b>, and building complex <b>applications</b>.</div>
+      <div> I love <b>teaching</b> subjects that I understand well.</div></div>
+      <div style={
+        {
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          margin: "100px 0",
+        }
+      }>
+        <div style={{
+          fontSize: "25px",
+          display: "flex",
+        }}>
+          <div style={{
+            borderRight: "4px solid rgb(154, 117, 48)",
+            padding: "0 0.75em"
+          }}>Technical skills </div>
+          <div style={{
+            padding: "0 0.75em"
+          }}> Frameworks and languages I know about.</div>
+        </div>
+      </div>
+      <div style={{
+            fontSize: "4px solid rgb(154, 117, 48)",
+            padding: "0 0.75em"
+          }}>Languages</div>
+
     </>
   )
 }
