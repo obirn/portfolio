@@ -15,13 +15,13 @@ function App() {
       <span className='greeting-job'>A Developper.</span>
       </div>
       <div style={{ margin: "20px"}}>      <div > I'm passionate about <b>algorithms</b>, <b>problems solving</b>, and building complex <b>applications</b>.</div>
-      <div> I love <b>teaching</b> subjects that I understand well.</div></div>
+      <div> I love <b>teaching</b> IT-related subjects and <b>share</b> my knowledge with others.</div></div>
       <div style={
         {
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-start",
-          margin: "100px 0",
+          alignItems: "center",
+          margin: "50px 50px",
         }
       }>
         <div style={{
@@ -29,19 +29,43 @@ function App() {
           display: "flex",
         }}>
           <div style={{
-            borderRight: "4px solid rgb(154, 117, 48)",
-            padding: "0 0.75em"
+            borderRight: "4px solid #a18555",
+            paddingRight: "0.75em"
           }}>Technical skills </div>
           <div style={{
-            padding: "0 0.75em"
-          }}> Frameworks and languages I know about.</div>
+            paddingLeft: "0.75em"
+          }}> Which tools do I work with</div>
         </div>
+        <div>
+          <div>
+            Languages
+          </div>
+          <div className="language-items">
+            <div className="language-item">
+            <img className="language-icon" src="python.svg"></img>
+              <span className="language-name">Python</span>
+            </div>
+          </div>
+          <div className="language-items">
+            <div className="language-item">
+            <img className="language-icon" src="c++.svg"></img>
+              <span className="language-name">C++</span>
+            </div>
+          </div>          
+          <div className="language-items">
+            <div className="language-item">
+            <img className="language-icon" src="c.svg"></img>
+              <span className="language-name">C</span>
+            </div>
+          </div>
+          <div className="language-items">
+            <div className="language-item">
+            <img className="language-icon" src="csharp.svg"></img>
+              <span className="language-name">C#</span>
+            </div>
+          </div>
       </div>
-      <div style={{
-            fontSize: "4px solid rgb(154, 117, 48)",
-            padding: "0 0.75em"
-          }}>Languages</div>
-
+      </div>
     </>
   )
 }
